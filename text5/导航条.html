@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: lightcyan;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .menu ul {
+            width: 800px;
+            overflow: hidden;
+            height: auto;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -400px;
+            z-index: 30;
+        }
+
+        .menu ul li {
+            width: 100px;
+            height: auto;
+            overflow: hidden;
+            float: left;
+            text-align: center;
+            position: relative;
+            z-index: -1;
+        }
+
+        .menu ul li a {
+            width: 100%;
+            height: 100px;
+            line-height: 100px;
+            display: block;
+            float: left;
+            font-size: 14px;
+            font-family: '微软雅黑';
+            color: #666;
+            text-decoration: none;
+            display: block;
+        }
+
+        .menu ul li a.first {
+            background: none;
+        }
+
+        .menu ul li.on a {
+            color: plum;
+        }
+
+        .menu ul li .second {
+            width: 70px;
+            height: 130px;
+            padding: 10px;
+            float: left;
+            background: #f6f6f6;
+            display: none;
+            margin-left: 5px;
+        }
+
+        .menu .dot {
+            width: 800px;
+            height: 8px;
+            line-height: 8px;
+            position: absolute;
+            left: 50%;
+            top: 70px;
+            margin-left: -395px;
+            z-index: 90000;
+        }
+
+        .menu .dot ul {
+            width: 800px;
+            height: 8px;
+            line-height: 8px;
+            position: relative;
+        }
+
+        .menu .dot ul span {
+            width: 90px;
+            height: 8px;
+            background: url("./image/dot.png") no-repeat center center;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 999;
+        }
+
+        .menu .dot_a {
+            width: 800px;
+            height: 100px;
+            line-height: 100px;
+            position: absolute;
+            left: 50%;
+            top: 0px;
+            margin-left: -395px;
+            z-index: -1;
+        }
+
+        .menu .dot_a ul {
+            width: 800px;
+            height: 100px;
+            line-height: 100px;
+            position: relative;
+        }
+
+        .menu .dot_a ul span {
+            width: 90px;
+            height: 100px;
+            background: #0b89ea;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li class="on"><a href="">网站首页</a>
+                <div class="second"></div>
+            </li>
+            <li><a href="">客户案例</a>
+                <div class="second"></div>
+            </li>
+            <li><a href="">服务项目</a>
+                <div class="second"></div>
+            </li>
+            <li><a href="">关于我们</a>
+                <div class="second"></div>
+            </li>
+            <li><a href="">新闻资讯</a>
+                <div class="second"></div>
+            </li>
+            <li><a href="">联系我们</a>
+                <div class="second"></div>
+            </li>
+            <li><a href="">分支结构</a>
+                <div class="second"></div>
+            </li>
+        </ul>
+        <div class="dot_a">
+            <ul><span></span></ul>
+        </div>
+        <div class="dot">
+            <ul><span></span></ul>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(function(){
+	var liWidth = $('.menu ul li').width();
+	$('.menu ul li').hover(function(){
+		var index = $(this).index();
+		$('.menu .dot span').stop().animate({left:liWidth*index+'px'},200);
+		$('.menu .dot_a span').stop().animate({left:liWidth*index+'px'},200);
+		$(this).addClass('on').siblings().removeClass('on');
+		$(this).find('.second').fadeIn(600);
+	},function(){
+		$(this).find('.second').fadeOut(600);
+	});
+});
+    
+    </script>
+</body>
+
+</html>

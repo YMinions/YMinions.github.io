@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+            body{
+                margin: 0;
+                padding: 0;
+                background:lightpink;
+            }
+            ul{
+                width: 300px;
+                height: 550px;
+                background: white;
+                padding: 0;
+                list-style: none;
+                margin: 100px auto;
+                line-height: 3em;
+                text-align: left;
+                text-transform: uppercase;
+                cursor: pointer;
+            }
+            ul li{
+                font-size: 20px;
+                font-family: roboto,sans-serif;
+                font-weight: 300;
+                margin-left: 50px;
+                padding: 10px;
+            }
+        
+        </style>
+</head>
+<body>
+        <ul id="container">
+                <li class="turn" draggable="true">корм</li>
+                <li class="turn"  draggable="true">сало</li>
+                <li class="turn"  draggable="true">железосталь</li>
+                <li class="turn"  draggable="true">антон</li>
+                <li class="turn"  draggable="true">кровать</li>
+                <li class="turn"  draggable="true">валик</li>
+                <li class="turn"  draggable="true">бегемот</li>
+                <li class="turn"  draggable="true">краб</li>
+            </ul>
+
+            <script>
+                    var node = document.querySelector("#container");
+                    //使用事件委托，将li的事件委托给ul 冒泡原理
+                    node.ondragstart = function (event) {
+                        //draging是拖动的元素
+                        draging = event.target;
+                        console.log(draging);
+                        event.dataTransfer.setData("Text", event.target.id); 
+            
+                    }
+                    node.ondragover = function (event) {
+                        // console.log(event.target);
+                        //取消默认事件
+                        event.preventDefault();
+                    }
+                    node.ondrop = function (event) {
+                        // console.log(draging);
+                        //target是目标元素li
+                        var target = event.target;
+                        console.log(target);
+                        console.log(_index(draging),_index(target));
+            
+            
+                        //因为ondrop会发生在ul上，所以要判断是不是li
+                        //判断当target的子节点是li，并且 目标元素li不是拖拽的li
+                        if (target.nodeName === "LI" && target !== draging) {
+                            //判断索引值来放位置
+                            if (_index(draging) < _index(target)) {
+                                //把draging插到target的下一个元素的前面
+                                target.parentNode.insertBefore(draging, target.nextSibling);
+                            } else {
+                                //否则就把draging放到target的前面
+                                target.parentNode.insertBefore(draging, target);
+                            }
+                        }
+                        console.log(_index(draging),_index(target));
+                        
+                    }
+                    //获取元素在父元素中的index
+                    function _index(el) {
+                        //无条件创造条件
+                        var index = 0;
+                        //如果当前元素标签跟前一个兄弟元素标签相同，index++
+                        while ( el = el.previousElementSibling) {
+                            // console.log(el.previousElementSibling);
+                            index++;
+                        }
+                        //返回el的index索引
+                        return index;
+            
+                    }
+                </script>
+</body>
+</html>

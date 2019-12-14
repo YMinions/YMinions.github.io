@@ -1,0 +1,669 @@
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body,
+a,
+span {
+  font-family: "Poppins", sans-serif;
+}
+nav.navbar {
+  margin-bottom: 0;
+  padding: 15px 0;
+}
+nav.navbar .navbar-header button.navbar-toggle {
+  border: none;
+}
+nav.navbar .navbar-header .navbar-brand {
+  font-size: 36px;
+  color: #fc427b;
+  font-weight: bold;
+  font-family: "Srisakdi", cursive;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li {
+  margin: 0 15px;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li a {
+  background: none;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li:hover a {
+  background: none;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+  transition: all 0.3s;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li a.active {
+  color: #fc427b;
+  background: none;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li a:hover {
+  color: #fc427b;
+  background: none;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu {
+  background: #333;
+  border-radius: 5px;
+  padding: 20px;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu li {
+  margin: 5px;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu li a {
+  color: white;
+}
+nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu li a:hover {
+  background: #bdb3b3;
+}
+section.banner ol.carousel-indicators {
+  bottom: 30px;
+}
+section.banner ol.carousel-indicators li {
+  width: 16px;
+  height: 16px;
+  background: #fc427b;
+  border: 4px solid white;
+  margin: 0 5px;
+}
+section.banner ol.carousel-indicators li.active {
+  background: white;
+}
+section.banner ol.carousel-indicators li:hover {
+  background: white;
+}
+section.banner .carousel-inner .item {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+section.banner .carousel-inner .item:nth-child(1) {
+  background-image: url("../images/2.jpg");
+}
+section.banner .carousel-inner .item:nth-child(2) {
+  background-image: url("../images/1.jpg");
+}
+section.banner .carousel-inner .item:nth-child(3) {
+  background-image: url("../images/4.jpg");
+}
+section.banner .carousel-inner .item .caption {
+  padding-top: 100px;
+  text-align: right;
+  color: white;
+}
+section.banner .carousel-inner .item .caption h5 {
+  font-size: 16px;
+  color: #333333;
+  font-weight: normal;
+  line-height: 2em;
+}
+section.banner .carousel-inner .item .caption h3 {
+  font-size: 24px;
+  font-weight: bolder;
+  text-shadow: 2px 5px 3px rgba(0, 0, 0, 0.06);
+  line-height: 1.5em;
+}
+section.banner .carousel-inner .item .caption a.btn {
+  margin-top: 20px;
+  background: #fc427b;
+  border: 2px solid white;
+  color: white;
+  font-weight: normal;
+  transition: all 0.3s;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 15px 30px;
+}
+section.banner .carousel-inner .item .caption a.btn:hover {
+  background: white;
+  color: #333333;
+}
+section.welcome .title {
+  padding-top: 50px;
+}
+section.welcome .title h3 {
+  font-size: 38px;
+  font-weight: 100;
+}
+section.welcome .title h5 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+}
+section.welcome dl span {
+  border: 2px solid white;
+  padding: 30px;
+  border-radius: 50%;
+  font-size: 32px;
+  background: #fc427b;
+  color: white;
+}
+section.welcome dl dt {
+  color: #333333;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 2em;
+}
+section.welcome dl dd {
+  color: #999999;
+  font-size: 16px;
+  line-height: 2em;
+}
+section.serives {
+  background: #fc427b;
+  padding: 100px 0;
+}
+section.serives ul li {
+  color: white;
+  text-align: center;
+}
+section.serives ul li span {
+  border: 2px solid white;
+  padding: 30px;
+  border-radius: 50%;
+  font-size: 32px;
+}
+section.serives ul li h5 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 50px 0 20px 0;
+}
+section.serives ul li p {
+  font-weight: 100;
+  font-size: 16px;
+}
+section.Blog {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+section.Blog .title {
+  text-align: center;
+}
+section.Blog .title h3 {
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  font-size: 34px;
+}
+section.Blog .title p {
+  padding-top: 15px;
+  padding-bottom: 30px;
+  font-size: 16px;
+  font-family: 'Sintony', sans-serif;
+  letter-spacing: 1.9;
+  color: #999;
+}
+section.Blog ul li .point {
+  position: relative;
+}
+section.Blog ul li .point .num {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90px;
+  height: 60px;
+  text-align: center;
+  background: #38d2fe;
+  color: white;
+}
+section.Blog ul li .point .num h4 {
+  font-size: 28px;
+  font-weight: 600;
+}
+section.Blog ul li .point .num span {
+  display: block;
+  font-size: 18px;
+}
+section.Blog ul li h3 {
+  font-weight: 600;
+  color: black;
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+}
+section.Blog ul li p {
+  font-size: 16px;
+}
+section.Blog ul li i {
+  font-style: normal;
+  font-size: 15px;
+  line-height: 1.9;
+  font-family: 'Sintony', sans-serif;
+  color: #999;
+  padding: 20px 0;
+}
+section.Beauty {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-size: cover;
+  background-image: url("../images/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+section.Beauty span {
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+section.Beauty h3 {
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  font-size: 28px;
+  padding-top: 10px;
+}
+section.Beauty p {
+  color: #eee;
+  font-size: 16px;
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-family: 'Sintony', sans-serif;
+}
+section.Gallery {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+section.Gallery .title {
+  text-align: center;
+}
+section.Gallery .title h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  line-height: 2em;
+}
+section.Gallery .title p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #999;
+  font-family: 'Sintony', sans-serif;
+}
+section.Gallery .container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+section.Gallery .row div[class^=col] {
+  padding: 5px;
+}
+section.Gallery .row div[class^=col] img {
+  border-radius: 5px;
+  width: 100%;
+}
+#myModal .modal-body img {
+  width: 100%;
+}
+section.Newsletter {
+  background-image: url("../images/bg3.jpg");
+  background-size: cover;
+}
+section.Newsletter .title {
+  padding: 50px;
+}
+section.Newsletter .title h3 {
+  padding-top: 50px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
+section.Newsletter .title p {
+  color: #999;
+  text-align: center;
+  font-family: 'Sintony', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+}
+section.Newsletter .table {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section.Newsletter .table .form-control {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 0.3em;
+  height: 50px;
+}
+section.Newsletter .table input[type="submit"] {
+  background: #38d2fe;
+  border: none;
+}
+section.contact {
+  padding-top: 100px;
+}
+section.contact .title {
+  text-align: center;
+}
+section.contact .title h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+section.contact .title p {
+  font-family: 'Sintony', sans-serif;
+  font-size: 16PX;
+  letter-spacing: 1PX;
+  color: #999;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+section.contact .nav .Address {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.15);
+}
+section.contact .nav .Address h3 {
+  text-align: left;
+  font-size: 23px;
+  font-weight: 600;
+  color: #38d2fe;
+}
+section.contact .nav .Address p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #999;
+  font-family: 'Sintony', sans-serif;
+  padding-top: 10px;
+}
+section.contact .nav .Phone {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.15);
+  margin-top: 34px;
+}
+section.contact .nav .Phone h3 {
+  text-align: left;
+  font-size: 23px;
+  font-weight: 600;
+  color: #38d2fe;
+}
+section.contact .nav .Phone p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #999;
+  font-family: 'Sintony', sans-serif;
+  padding-top: 10px;
+}
+section.contact .nav .Mail {
+  padding-top: 60px;
+  padding-bottom: 40px;
+  box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.15);
+  margin-top: 34px;
+}
+section.contact .nav .Mail h3 {
+  text-align: left;
+  font-size: 23px;
+  font-weight: 600;
+  color: #38d2fe;
+}
+section.contact .nav .Mail p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #999;
+  font-family: 'Sintony', sans-serif;
+  padding-top: 10px;
+}
+section.contact .Touch {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  box-shadow: 0px 2px 13px -1px rgba(0, 0, 0, 0.15);
+}
+section.contact .Touch h3 {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 600;
+  color: #38d2fe;
+  letter-spacing: 1px;
+}
+section.contact .Touch .form .form-group {
+  padding-top: 18px;
+}
+section.contact .Touch .form .form-group .form-control {
+  padding: 21px;
+  font-size: 18px;
+  line-height: 3em;
+  list-style: none;
+  border: none;
+  border-bottom: 1px solid #999;
+  outline: none;
+}
+section.contact .Touch .form input[type="submit"] {
+  width: 100%;
+  height: 60px;
+  border: none;
+  background: #FC427B;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 10px;
+}
+section.about {
+  padding-top: 250px;
+  color: white;
+}
+section.about .backdrop {
+  background: #333;
+}
+section.about .rim {
+  padding-top: 50px;
+}
+section.about .rim h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-weight: 600;
+}
+section.about .rim .word p {
+  font-size: 14px;
+  font-weight: 200;
+  color: #ababab;
+  font-family: 'Sintony', sans-serif;
+  letter-spacing: 1px;
+  padding-top: 50px;
+  line-height: 2em;
+}
+section.about .rim .unde {
+  padding-top: 50px;
+}
+section.about .rim .unde h4 {
+  font-size: 16px;
+  color: #f8f9fa;
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+section.about .rim .unde p {
+  font-size: 14px;
+  color: #ababab;
+}
+section.about .rim .incunt {
+  padding-top: 20px;
+}
+section.about .rim .incunt h4 {
+  font-size: 16px;
+  color: #f8f9fa;
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+section.about .rim .incunt p {
+  font-size: 14px;
+  color: #ababab;
+}
+section.about .rim .sucipit {
+  padding-top: 20px;
+}
+section.about .rim .sucipit h4 {
+  font-size: 16px;
+  color: #f8f9fa;
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+section.about .rim .sucipit p {
+  font-size: 14px;
+  color: #ababab;
+}
+section.about .rim .Phone {
+  padding-top: 50px;
+}
+section.about .rim .Phone h4 {
+  font-size: 16px;
+  color: #f8f9fa;
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+section.about .rim .Phone p {
+  font-size: 14px;
+  color: #ababab;
+}
+section.about .rim .Email {
+  padding-top: 20px;
+}
+section.about .rim .Email h4 {
+  font-size: 16px;
+  color: #f8f9fa;
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+section.about .rim .Email p {
+  font-size: 14px;
+  color: #ababab;
+}
+section.about .rim .Location {
+  padding-top: 20px;
+}
+section.about .rim .Location h4 {
+  font-size: 16px;
+  color: #f8f9fa;
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+section.about .rim .Location p {
+  font-size: 14px;
+  color: #ababab;
+}
+section.about .rim ul {
+  padding-top: 50px;
+}
+section.about .rim ul li {
+  padding-bottom: 20px;
+}
+section.about .rim ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ababab;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-family: 'Sintony', sans-serif;
+}
+section.about .rim ul li a:hover {
+  color: white;
+}
+section.about .line {
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+section.about .line a.arrows {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  background: url("../images/move-top.png") no-repeat 0 0;
+}
+section.about .line p {
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Sintony', sans-serif;
+  font-weight: 200;
+  color: #ababab;
+  letter-spacing: 2px;
+  padding-bottom: 60px;
+  padding-top: 5px;
+}
+section.about .line p a {
+  color: #FC427B;
+  text-decoration: none;
+  transition: all 1s;
+}
+section.about .line p a:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  nav.navbar {
+    padding: 10px 50px;
+  }
+  nav.navbar .navbar-collapse ul.navbar-nav li a {
+    text-align: left;
+  }
+  nav.navbar .navbar-collapse ul.navbar-nav li:hover ul.dropdown-menu {
+    display: block;
+  }
+  nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu {
+    background: #333333;
+  }
+  nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu li a {
+    color: white;
+    transition: all 0.3s;
+    padding: 5px 10px;
+  }
+  nav.navbar .navbar-collapse ul.navbar-nav li ul.dropdown-menu li a:hover {
+    color: #333333;
+    background: white;
+  }
+  section.banner .carousel-inner .item {
+    height: 500px;
+  }
+  section.banner .carousel-inner .item .caption {
+    padding-top: 130px;
+  }
+  section.banner .carousel-inner .item .caption h5 {
+    font-size: 18px;
+  }
+  section.banner .carousel-inner .item .caption h3 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  section.banner .carousel-inner .item {
+    height: 600px;
+  }
+  section.banner .carousel-inner .item .caption {
+    padding-top: 170px;
+  }
+  section.banner .carousel-inner .item .caption h5 {
+    font-size: 20px;
+  }
+  section.banner .carousel-inner .item .caption h3 {
+    font-size: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  section.banner .carousel-inner .item {
+    height: 720px;
+  }
+  section.banner .carousel-inner .item .caption {
+    padding-top: 250px;
+  }
+  section.banner .carousel-inner .item .caption h5 {
+    font-size: 25px;
+  }
+  section.banner .carousel-inner .item .caption h3 {
+    font-size: 50px;
+  }
+}

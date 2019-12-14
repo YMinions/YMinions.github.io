@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)http://127.0.0.1:5500/10.30/%E8%A1%A8%E5%8D%95/%E8%A1%A8%E5%8D%952.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+        .menu{
+            width: 400px;
+            height: 600px;
+            background-image: url("./image/w.jpg");
+            background-repeat: no-repeat;
+            margin: 0 auto;
+            
+        }
+        
+        h1{
+            text-align: center;
+            padding: 10px;
+            color:paleturquoise;
+        }
+
+         input[type=text]{
+             line-height: 35px;
+             width: 330px;
+             margin-top: 15px;
+             margin-left: 20px;
+         }
+         b{
+             font-weight: none;
+         }
+         p{
+             font-size: 16px;
+             text-align: center;
+         }
+         p a{
+             text-decoration: none;
+             color: palevioletred
+             
+         }
+         p a:hover{
+             cursor: pointer;
+             color:orangered;
+         }
+
+         input[type=submit]{
+             width: 300px;
+             line-height: 35px;
+             margin-left: 40px;
+             border-radius: 10px;
+             background:#e98358;
+             border: 1px solid  #febb9e;
+             margin-top: 10px;
+         }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="menu">
+            <h1>17素材</h1>
+        <form action="http://127.0.0.1:5500/10.30/%E8%A1%A8%E5%8D%95/%E8%A1%A8%E5%8D%952.html" method="GET">
+            <input type="text" id="number" name="number" placeholder="手机号码"> <br>
+            <b class="tips">请输入手机号</b>
+            <br>
+            <input type="text" id="code" name="code" placeholder="动态码"><br>
+            <b class="tips" style="
+    font-weight: none;
+    font-size: 16;
+">请填写正确的手机动态码</b>            
+            <br>
+            <input type="text" id="username" name="username" placeholder="账户名"> <br>
+            <b class="tips">用户名长度3-20位</b>            
+            <br>
+            <input type="text" id="password" name="password" placeholder="设置密码"><br>
+            <b class="tips">密码长度6-20位</b>
+            <br>
+            <input type="text" id="confirm" name="confirm" placeholder="确认密码"><br>
+            <b class="tips">密码长度6-20位</b>            
+            <br>
+              <p>注册用户同意<a href="http://127.0.0.1:5500/10.30/%E8%A1%A8%E5%8D%95/%E8%A1%A8%E5%8D%952.html">《用户使用协议》</a>&amp;<a href="http://127.0.0.1:5500/10.30/%E8%A1%A8%E5%8D%95/%E8%A1%A8%E5%8D%952.html">《隐私权条款》</a></p>  
+
+              <input type="submit" value="注册">
+    </form></div>
+        
+        
+        
+    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

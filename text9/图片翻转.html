@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background: url("./images/background.jpg");
+            /* background-size: cover; */
+        }
+
+        .box {
+            width: 1200px;
+            margin: 10px auto;
+            position: relative;
+        }
+
+        .boxA {
+            width: 350px;
+            height: 350px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+
+        img {
+            width: 100%;
+            transition: all .5s;
+        }
+
+
+        .mask {
+            width: 350px;
+            height: 350px;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            opacity: 0;
+            transition: all 1s;
+            transform: rotateY(90deg);
+        }
+
+
+        .mask h4 {
+            position: absolute;
+            top: 60px;
+            left: 130px;
+            color: white;
+            font-size: 24px;
+            text-transform: uppercase;
+
+        }
+
+        .mask P {
+            position: absolute;
+            top: 140px;
+            left: 10px;
+            color: white;
+            line-height: 24px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .mask P::before {
+            content: "";
+            display: block;
+            width: 80%;
+            color: white;
+            border-top: 1px solid white;
+            position: absolute;
+            left: 30px;
+            top: -15px;
+        }
+
+        .mask P::after {
+            content: "";
+            display: block;
+            width: 80%;
+            color: white;
+            border-bottom: 1px solid white;
+            position: absolute;
+            left: 30px;
+            bottom: -20px;
+        }
+
+        .boxB {
+            width: 350px;
+            height: 350px;
+            position: absolute;
+            top: 10px;
+            left: 430px;
+        }
+
+        .boxB .word{
+            width: 350px;
+            height: 350px;
+            background:rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            transition: all 1s;
+            transform: rotateY(90deg);
+        }
+
+        .word h4 {
+            position: absolute;
+            top: 60px;
+            left: 130px;
+            color: white;
+            font-size: 24px;
+            text-transform: uppercase;
+
+        }
+
+        .word P {
+            position: absolute;
+            top: 140px;
+            left: 10px;
+            color: white;
+            line-height: 24px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .word P::before {
+            content: "";
+            display: block;
+            width: 80%;
+            color: white;
+            border-top: 1px solid white;
+            position: absolute;
+            left: 30px;
+            top: -15px;
+        }
+
+        .word P::after {
+            content: "";
+            display: block;
+            width: 80%;
+            color: white;
+            border-bottom: 1px solid white;
+            position: absolute;
+            left: 30px;
+            bottom: -20px;
+        }
+
+        .boxC{
+            width: 350px;
+            height: 350px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .boxC .masks{
+          
+            width: 350px;
+            height: 350px;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            opacity: 0;
+            transition: all 1s;
+            transform: rotateY(90deg);
+        
+        }
+
+        
+        .masks h4 {
+            position: absolute;
+            top: 60px;
+            left: 130px;
+            color: white;
+            font-size: 24px;
+            text-transform: uppercase;
+
+        }
+
+        .masks P {
+            position: absolute;
+            top: 140px;
+            left: 10px;
+            color: white;
+            line-height: 24px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .masks P::before {
+            content: "";
+            display: block;
+            width: 80%;
+            color: white;
+            border-top: 1px solid white;
+            position: absolute;
+            left: 30px;
+            top: -15px;
+        }
+
+        .masks P::after {
+            content: "";
+            display: block;
+            width: 80%;
+            color: white;
+            border-bottom: 1px solid white;
+            position: absolute;
+            left: 30px;
+            bottom: -20px;
+        }
+     
+      
+
+        .ring:hover .boxA img {
+            transform: rotateY(90deg);
+        }
+
+        .ring:hover .mask {
+            opacity: 1;
+            transform: rotateY(20deg)
+        }
+        .turn:hover .boxB img {
+            transform: rotateY(90deg);
+        }
+
+        .turn:hover .word {
+            opacity: 1;
+            transform: rotateY(20deg)
+        }
+        .round:hover .boxC img {
+            transform: rotateY(90deg);
+        }
+
+        .round:hover .masks {
+            opacity: 1;
+            transform: rotateY(20deg)
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="ring">
+        <div class="boxA">
+            <img src="./images/1.jpg" alt="">
+
+            <div class="mask">
+                <h4>Duende</h4>
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae libero orci. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed vestibulum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="turn">
+        <div class="boxB">
+                <img src="./images/2.jpg" alt="">
+    
+                <div class="word">
+                    <h4>Duende</h4>
+                    <p class="text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae libero orci. Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed vestibulum.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="round">
+            <div class="boxC">
+                    <img src="./images/3.jpg" alt="">
+        
+                    <div class="masks">
+                        <h4>Duende</h4>
+                        <p class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vitae libero orci. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed vestibulum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+</body>
+
+</html>

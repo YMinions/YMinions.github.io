@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            padding: 0;
+            list-style: none;
+        }
+        .round{
+            width: 400px;
+            height: 400px;
+            /* background: blanchedalmond; */
+            margin: 100px auto;
+            position: relative;
+            perspective: 500px;
+            /* transform: translateX(-50%) translateY(-50%); */
+          
+        }
+
+        .circle{
+            width: 250px;
+            height: 250px;
+            /* background: blueviolet; */
+            position: absolute;
+            top: 50px;
+            left: 80px;
+            transform-style: preserve-3d;
+            animation: turn 6s infinite ease-in-out; 
+        }
+       
+        @keyframes turn {
+            0%{
+                transform: rotateX(0deg)rotateY(0deg);
+            }
+             50%{
+                transform: rotateX(360deg) rotateY(0deg);
+            } 
+            100%{
+                transform: rotateX(360deg)rotateY(360deg) ;
+            }
+        }
+    
+        .box{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 60px;
+            left: 60px;
+      
+        }
+        li:nth-child(1) {
+            background: #41C3AC;
+            transform: rotateX(90deg) translateZ(120px);
+        }
+        li:nth-child(2) {
+            background: #FF884D;
+            transform: rotateX(90deg) translateZ(-120px);
+        }
+        li:nth-child(3) {
+            background: #32526E;
+            transform: rotateY(90deg) translateZ(-120px);
+        }
+        li:nth-child(4) {
+            background: #65A2C5;
+            transform: rotateY(90deg) translateZ(120px);
+        }
+        li:nth-child(5) {
+            background: #FFCC5C;
+            transform:  translateZ(120px);
+        }
+
+        li:nth-child(6) {
+            background:#FF6B57;
+            transform:  translateZ(-120px);
+        }
+        .round2{
+            width: 400px;
+            height: 400px;
+            /* background: blanchedalmond; */
+            margin: 100px auto;
+            position: relative;
+            perspective: 500px;
+        
+        }
+        .round2 .box{
+            border-radius: 50%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="round">
+        <ul class="circle">
+            <li class="box"></li>
+            <li class="box"></li>
+            <li class="box"></li>
+            <li class="box"></li>
+            <li class="box"></li>
+            <li class="box"></li>
+        </ul>
+    </div>
+
+    <div class="round2">
+            <ul class="circle">
+                <li class="box"></li>
+                <li class="box"></li>
+                <li class="box"></li>
+                <li class="box"></li>
+                <li class="box"></li>
+                <li class="box"></li>
+            </ul>
+        </div>
+</body>
+</html>

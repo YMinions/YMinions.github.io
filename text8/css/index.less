@@ -1,0 +1,73 @@
+body{
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(-45deg,rgb(223, 39, 39), rgb(189, 7, 189));
+    display: flex;
+    background-size: 400% 300%;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+    animation: turn 10s ease infinite;
+}
+@keyframes turn{
+  
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    
+}
+
+.stage{
+    width: 600px;
+    height: 400px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.4);
+    dt{
+        &:nth-child(1){
+            color: #eb285d;
+            font-size: 18px;
+            padding:10px 10px ;
+            font-weight: 600;
+        }
+        &:nth-child(2){
+            font-size: 32px;
+            color: #3e3e42;
+            font-weight: 800;
+            letter-spacing: 1px;
+            padding:10px 10px;
+        }
+    }
+    .items{
+        display: flex;
+        justify-content: space-around;
+        .card{
+            width: 160px;
+            height: 240px;
+            overflow: hidden;
+            border-radius: 20px;
+            background-image: url("../image/3dr_mono.png"),
+                                url("../image/3dr_monobg.jpg");
+            background-repeat: no-repeat,repeat;
+            background-size: auto 200px,200px;
+            background-position: 10px 60px,-10px -10px;
+                                &:nth-child(2) {
+                                    background-image: url("https://www.17sucai.com/preview/1424582/2018-11-08/kp/img/3dr_chihiro.png"),
+                                    url("https://www.17sucai.com/preview/1424582/2018-11-08/kp/img/3dr_spirited.jpg");
+                                    background-position: 30px 60px, -10px -10px;
+                                }
+                                &:nth-child(3) {
+                                    background-image: url("https://www.17sucai.com/preview/1424582/2018-11-08/kp/img/3dr_howlcastle.png"),
+                                    url("https://www.17sucai.com/preview/1424582/2018-11-08/kp/img/3dr_howlbg.jpg");
+                                }
+                            }
+       
+    }
+}
+

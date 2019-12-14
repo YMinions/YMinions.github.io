@@ -1,0 +1,70 @@
+section.turn {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/background.jpg");
+  position: relative;
+}
+section.turn .box {
+  position: relative;
+  width: 350px;
+  height: 350px;
+}
+section.turn .box img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+section.turn .word {
+  width: 350px;
+  height: 350px;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 60px;
+  opacity: 0;
+  margin: 10px 10px;
+}
+section.turn .word h4 {
+  position: absolute;
+  top: 70px;
+  left: 130px;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+section.turn .word P {
+  position: absolute;
+  top: 140px;
+  left: 10px;
+  color: white;
+  line-height: 24px;
+  font-size: 14px;
+  text-align: center;
+}
+section.turn .word P::before {
+  content: "";
+  display: block;
+  width: 80%;
+  color: white;
+  border-top: 1px solid white;
+  position: absolute;
+  left: 30px;
+  top: -15px;
+}
+section.turn .word P::after {
+  content: "";
+  display: block;
+  width: 80%;
+  color: white;
+  border-bottom: 1px solid white;
+  position: absolute;
+  left: 30px;
+  bottom: -20px;
+}
+section.turn:nth-child(2) {
+  position: absolute;
+  top: 0;
+}
+
+

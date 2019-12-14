@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url("./image/li.jpg") no-repeat;
+            line-height: 30px;
+        }
+
+        .menu {
+            width: 450px;
+            margin-top: 5%;
+            margin-left: 20%;
+            background: papayawhip
+        }
+
+        header {
+            width: 100%;
+            overflow: hidden;
+
+        }
+
+        header a {
+            text-decoration: none;
+            float: left;
+            font-size: 16px;
+            margin-left: 12%;
+            margin-top: 5%;
+            color: black;
+            line-height: 30px;
+        }
+
+        header a:last-child {
+            float: right;
+            margin-right: 12%;
+        }
+
+        header a:hover {
+            cursor: pointer;
+            color: purple;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: -20px;
+        }
+
+        .register {
+            text-align: center;
+            padding: 45px;
+        }
+
+        .register button {
+            outline: none;
+            border: none;
+        }
+
+        .register label {
+            display: block;
+        }
+
+        .register label input {
+            width: 100%;
+            height: 40px;
+            outline: none;
+            border: 2px solid lightpink;
+            padding: 0 15px;
+            box-sizing: border-box;
+            margin: 10px 0;
+        }
+
+        .register label {
+            text-align: left;
+        }
+
+        .register label span {
+            font-size: 12px;
+            line-height: 20px;
+            display: block;
+            color: orangered;
+            display: none;
+        }
+
+        .register label.error span {
+            display: block;
+        }
+
+        .register label.error input {
+            background: lightgray;
+        }
+
+        .register label.success input {
+            background: paleturquoise;
+        }
+
+        .register label span::before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAEN0lEQVRYR82YXWwUZRSGn3e7ulD8bSUGxYi4QKzdof7UxhuCNwJiCdBuAiZNjJELe6mJ3qhcqIneqDHRGI3xhqAwbTH1B4MxwWiMksjP7raG0HBhgGAiJYgQqe0cs1u37S473f1mUTtXm+x53/PMmfm+c74Rc/zSHOejLkBL0wCpBzBbBLEmsCbM/gSNEMRGOHvkuPYzXk8RnAENYnR5m5BtROoErg8FMLuE+BpjkDH7RIO5X11hnQCty+tAfIC42zURZoa0G9guP3O0Vn1NgLZhxbUkrn4L9HitxuFxFmDsZGysV4NHz1fzqwpom1rvIh77HLijmpnT/8YQAWs1kDkxm25WQEu3roeYD8x3Sl5zsJ0msDXqz2XCJKGAtrH1Tq7SYdA1NeeLFGinmVB7WCUrAlrnLY3Maz4IWhEpp7PIfuac2rUvc6FcWhkw7b0DPOWY5zeC4CWk80gvAkuc9GY71JftqQpom1YuJ27DkN+EXa7xDvnDB/IK29h2A/GJEaRmFwcwT342O1NzWQWt2+tHbHY0Pis/2zRTY93eD4gOR5+v5GcfDgW0dEsS4sfcTIvRwWb5uT2FCqZX3grBCGies9cE92kgc7CoK6mgdaeeQ3rV2bRAZQbKA2bBepCWRvIheEV+7vkQwCiPJRpGuMqG5WenWulUBW196kYaNRopndmHSDuwIECx6zB7F2lRJK+CSIvlHzlZ+FU0sXRLG8QPuZvaiPzssrIF8hFii7vXPwpjlfoy35YCdqUeIaZ8z3W7jIuMXVqmwaOnpm6229uJ2OpmNDM62CI/t6sccBsxvRfJ1OwE0qfyM72F9VI3oD0jP/t6KWC39yTi/UiAk6ID8jOFfa9uwMCeVn/2jbJ3sDC5fDYnAG1iq/qGPi4F3OzdSwM/zQlAbLX87DelgPltZj5nkKoOsSE3ceUe8QS3Fcev0k6STn0PejBiFa8UYE5+JlVkKG91zyK99r8Cmr2svuwLlQHrGhZmrOIurwvZGqRt7jc7fo/84cMVASe3iNRupLS78TTg9Iad+gJpnYPXl/IzJfGXz4NpL396y49cjgMrp/jj4lLtHbk0BZj29gJrawYcJ6U9mdzM+Mojf3fr2yhW6AqO1wGMPFS+y68CHqpZX+vIX3jM65IJFsz/Dun+mhPUFWi/wAVP/vFz5Tbhx87O5TeRSBxCWlxX7mriye837eVnkdBFMtOvcIBqsH2I26vlifj/XxD0FCeXSh5Vu4alkwuhcR/QFhEiTHaSYLxT/cOzzqBVAQvvZP4gn2h+E+mJCKu7EuAuGO+VP1x1gq8JcHrbaEliDdsRj4FizhU1jiHbVhwEatE7AU6Bbmi9mQSPgjZg5DtGIjyZ/Q7aSxAMcCY34PrFNRJgyUJaTZyFLUsgngRLYizAGAWNYhOnGR360RWq6kZdS+n/q5i6K/hvg/4NPX2LOLSlU28AAAAASUVORK5CYII=");
+            background-size: 100%;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .register label .nua {
+            position: relative;
+        }
+
+        .register label .nua button {
+            background: wheat;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            line-height: 24px;
+            padding: 0 10px;
+            margin-top: -12px;
+            cursor: pointer;
+            color: ghostwhite;
+            right: 5%;
+        }
+
+        input[type=submit] {
+            width: 300px;
+            line-height: 35px;
+            margin-left: 5px;
+            border-radius: 10px;
+            background: #e98358;
+            border: 1px solid #febb9e;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        p a {
+            text-decoration: none;
+            color: palevioletred;
+        }
+
+        p a:hover {
+            cursor: pointer;
+            color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <header>
+            <a href="">返回首页</a>
+            <a href="">已有账号?去登录</a>
+        </header>
+        <h1>阿狸注册网</h1>
+        <div class="register">
+            <form action="" method="POST">
+                <label class="number">
+                    <div class="nua">
+                        <input type="text" name="number" placeholder="手机号码">
+                        <button>发送验证码</button>
+                    </div>
+                    <span>手机号码格式不正确</span>
+                </label>
+                <br>
+                <label class="code">
+                    <input type="text" name="code" placeholder="动态码">
+                    <br>
+                    <span>请输入正确的动态码</span>
+                </label>
+                <br>
+                <label class="username">
+                    <input type="text" name="username" placeholder="用户名">
+                    <br>
+                    <span>用户名长度为3-20位</span>
+                </label>
+                <br>
+                <label class="email">
+                    <input type="text" name="email" placeholder="邮箱">
+                    <br>
+                    <span>请输入正确的邮箱格式</span>
+                </label>
+                <br>
+                <label class="password">
+                    <input type="text" name="password" placeholder="设置密码">
+                    <br>
+                    <span>设置密码</span>
+                </label>
+                <br>
+                <label class="repassword">
+                    <input type="text" name="repassword" placeholder="确认密码">
+                    <br>
+                    <span>请再次输入密码</span>
+                </label>
+                <input type="submit" value="注册">
+
+                <p>注册用户同意<a href="">《用户使用协议》</a>&<a href="">《隐私权条款》</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var form = document.forms.item(0);
+        var inputs = form.querySelectorAll("input");
+        var numberDom = form.querySelector(".number");
+        var codeDom = form.querySelector(".code");
+        var usernameDom = form.querySelector(".username");
+        var emailDom = form.querySelector(".email");
+        var passwordDom = form.querySelector(".password");
+        var repasswordDom = form.querySelector(".repassword");
+
+        var numberRegex = /^\d{11}$/;
+        var codeRegex = /^\d{4}$/;
+        var usernameRegex = /^(\w|[\u3040-\u9fff]){3,20}$/;
+        var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{6,20}$/
+        var emailRegex = /(([A-z 0-9]+\.)?[A-z 0-9]+@)[A-z 0-9]{2,}(\.[a-z]{2,4}){1,2}/
+        var repasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^]{6,20}$/
+
+
+        function check(str,regex) {
+            return regex.test(str);
+        }
+
+        inputs.forEach(function (input,index,inputs) {
+            input.oninput = function (event) {
+                switch (this.name) {
+                    case "number":
+                        if(check(this.value, numberRegex)){
+                            numberDom.classList.remove("error");
+                            numberDom.classList.add("success");
+                        } else {
+                            numberDom.classList.remove("succes");
+                            numberDom.classList.add("error");
+                        }
+                        break;
+                        
+                        case "code":
+                        if(check(this.value, codeRegex)){
+                            codeDom.classList.remove("error");
+                            codeDom.classList.add("success");
+                        } else {
+                            codeDom.classList.remove("succes");
+                            codeDom.classList.add("error");
+                        }
+                        break;
+
+                        case "username":
+                        if(check(this.value, usernameRegex)){
+                            usernameDom.classList.remove("error");
+                            usernameDom.classList.add("success");
+                        } else {
+                            usernameDom.classList.remove("succes");
+                            usernameDom.classList.add("error");
+                        }
+                 
+                    case "email":
+                        if(check(this.value, emailRegex)){
+                            emailDom.classList.remove("error");
+                            emailDom.classList.add("success");
+                        } else {
+                            emailDom.classList.remove("succes");
+                            emailDom.classList.add("error");
+                        }
+                    
+                    case "password":
+                        if(check(this.value, passwordRegex)){
+                            passwordDom.classList.remove("error");
+                            passwordDom.classList.add("success");
+                        } else {
+                            passwordDom.classList.remove("succes");
+                            passwordDom.classList.add("error");
+                        }
+                
+                        case "repassword":
+                        if(check(this.value, repasswordRegex)){
+                            repasswordDom.classList.remove("error");
+                            repasswordDom.classList.add("success");
+                        } else {
+                            repasswordDom.classList.remove("succes");
+                            repasswordDom.classList.add("error");
+                        }
+                
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

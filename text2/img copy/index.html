@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        	.swiper {
+				width: 500px;
+				height: 400px;
+				/* background: lightblue; */
+				position: relative;
+                overflow: hidden;
+                margin: 50px auto;
+			}
+			.swiper .content {
+				width: 500%;
+				overflow: hidden;
+				/* transition: all 0.3s; */
+			}
+			.swiper .content li {
+				width: 20%;
+				float: left;
+			}
+			.swiper .content li img {
+				width: 100%;
+				vertical-align: middle;
+			}
+            .swiper .pagenation {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				text-align: center;
+			}
+			.swiper .pagenation span {
+				width: 10px;
+				height: 10px;
+				background: red;
+				display: inline-block;
+				line-height: 20px;
+				margin: 0 5px;
+			}
+			.swiper .pagenation span.active {
+				background: blue;
+			}
+    </style>
+</head>
+<body>
+    <div class="swiper">
+        <ul class="content">
+            <li>
+                <img src="./1.jpg" alt="" />
+            </li>
+            <li>
+                <img src="./2.jpg" alt="" />
+            </li>
+            <li>
+                <img src="./3.jpg" alt="" />
+            </li>
+            <li>
+                <img src="./a004.jpg" alt="" />
+            </li>
+            <li>
+                <img src="./5.jpg" alt="" />
+            </li>
+        </ul>
+        <div class="pagenation"></div>
+        <div class="controler">
+            <span class="prev">prev</span>
+            <span class="next">next</span>
+        </div>
+    </div>
+    <script>
+        // 遍历 li 根据li个数生成 小点点
+        $(".content li").each(function(index, element) {
+            // $('.swiper .pagenation').append('<span></span>')
+            // 第一个小点点默认高亮
+            var dotJQ = index == 0 ? $("<span class='active'></span>") : $("<span></span>");
+            // 小点点加入到分页器 并加上点击事件
+            dotJQ.appendTo(".swiper .pagenation").click(function() {
+                // console.log($(this).index());
+                // 获取当前小点点 的下标
+                current = $(this).index();
+                showPic();
+            });
+        });
+
+        var current = 0;
+        var canClick = true;
+        // 防抖
+        function nextPic() {
+            if (canClick) {
+                // console.log('xxx');
+                // current++;
+                canClick = false;
+                current = current >= 5 - 1 ? 0 : ++current;
+                // $(".content").css("margin-left", current * -100 + "%");
+                // $(".content").css({"margin-left":current * -100 + "%", 'border':'1px solid red'})
+                showPic();
+            }
+        }
+        function prevPic() {
+            if (canClick) {
+                canClick = false;
+                current = current <= 0 ? 5 - 1 : --current;
+                showPic();
+            }
+        }
+
+        function showPic() {
+            // 包含所有图片的父元素 根据需要显示的 图片的下标计算偏移值  回调函数里面 做完动画之后 撤销防抖
+            $(".content").animate({ "margin-left": current * -100 + "%" }, function() {
+                canClick = true;
+            });
+            // 对应小点点高亮
+            $(".swiper .pagenation span")
+                .eq(current)
+                .addClass("active")
+                .siblings()
+                .removeClass("active");
+        }
+
+        $(".controler .next").click(nextPic);
+        $(".controler .prev").click(prevPic);
+
+        var id = setInterval(nextPic, 3000);
+        $(".swiper").mouseenter(function() {
+            clearInterval(id);
+        });
+        $(".swiper").mouseleave(function() {
+            var id = setInterval(nextPic, 3000);
+        });
+
+
+    </script>
+</body>
+</html>

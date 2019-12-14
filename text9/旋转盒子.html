@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./css/feng.css"> -->
+
+    <style>
+      body{
+        /* background: url("./img/bg.jpg")0 0 no-repeat; */
+        background-size: cover;
+        perspective: 800px;
+      }
+      ul{
+        list-style: none;
+        padding: 0;
+      }
+      .revolve{
+        width: 800px;
+        height: 800px;
+        margin: 100px auto;
+        /* background: palegreen; */
+        position: relative;
+        transform-style: preserve-3d;
+        /* perspective: 500; */
+        animation: turn 10s linear infinite ;
+       
+
+      }
+
+      @keyframes turn {
+        from{
+          transform: rotateY(0deg) rotateX(30deg);
+        }
+        to{
+          transform: rotateY(360deg) rotateX(30deg);
+        }
+      }
+      .Round{
+      width: 300px;
+      height: 300px;
+      position: absolute;
+      top:200px;
+      left: 250px;
+      transform-style: preserve-3d;
+      /* background: rgb(143, 105, 127); */
+    
+    }
+      .Round li{
+
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 80px;
+        left: 70px;
+      } 
+    .Round li:nth-child(1) {
+      background: paleturquoise;
+      transform: translateZ(75px);
+     
+    }
+    .Round li:nth-child(2) {
+      background: palevioletred;
+      transform: translateZ(-75px);
+     
+    }
+    .Round li:nth-child(3) {
+      background: powderblue;
+      transform: rotateX(90deg) translateZ(-75px);
+    }
+    .Round li:nth-child(4) {
+      background: rgb(59, 86, 207);
+      transform: rotateX(90deg) translateZ(75px);
+    }
+    .Round li:nth-child(5) {
+      background: lightpink;
+      transform: rotateY(90deg) translateZ(75px);
+    }
+    .Round li:nth-child(6) {
+      background: magenta;
+      transform: rotateY(90deg) translateZ(-75px);
+    }
+  
+    .maxbox{
+      width: 400px;
+      height: 400px;
+      position: absolute;
+      left: 200px;
+      top: 200px;
+      transform-style: preserve-3d;
+      /* background: mediumturquoise; */
+  
+    }
+
+    .maxbox li{
+      width: 300px;
+      height: 300px;
+      /* background: mistyrose; */
+      position: absolute;
+      top: 0px;
+      left: 50px;
+      transition: all 1s;
+    }
+    .maxbox li:nth-child(1){
+      background: rgba(230, 191, 126,0.8);
+      transform: rotateY(90deg) translateZ(150px);
+    }
+    .maxbox li:nth-child(2){
+      background: rgba(197, 197, 6,0.8);
+      transform: rotateY(90deg) translateZ(-150px);
+
+    }
+    .maxbox li:nth-child(3){
+      background: rgba(170, 59, 166,0.8);
+      transform: rotateX(90deg) translateZ(150px);
+
+    }
+    .maxbox li:nth-child(4){
+      background: rgba(197, 144, 46,0.8);
+      transform: rotateX(90deg) translateZ(-150px);
+
+    }
+    .maxbox li:nth-child(5){
+      background: rgba(255, 69, 0,0.8);
+      transform: translateZ(150px);
+    }
+    .maxbox li:nth-child(6){
+      background:rgba(17, 193, 216,0.8);
+      transform: translateZ(-150px);
+    }
+
+
+     .maxbox:hover li:nth-child(1){
+          transform: rotateY(90deg) translateZ(250px);
+     }
+     .maxbox:hover li:nth-child(2){
+      transform: rotateY(90deg) translateZ(-250px);
+        
+     }
+     .maxbox:hover li:nth-child(3){
+      transform: rotateX(90deg) translateZ(250px);
+
+     }
+     .maxbox:hover li:nth-child(4){
+      transform: rotateX(90deg) translateZ(-250px);
+    
+     }
+     .maxbox:hover li:nth-child(5){
+          transform: translateZ(250px);
+     }
+     .maxbox:hover li:nth-child(6){
+          transform: translateZ(-250px);
+     }
+     
+    </style>
+</head>
+<body>
+    <section class="revolve">
+    <ul class="Round">
+      <li class="box top"></li>
+      <li class="box bottom"></li>
+      <li class="box left"></li>
+      <li class="box right"></li>
+      <li class="box next"></li>
+      <li class="box back"></li>
+    </ul>
+
+    <ul class="maxbox">
+      <li class="top"></li>
+      <li class="bottom"></li>
+      <li class="left"></li>
+      <li class="right"></li>
+      <li class="next"></li>
+      <li class="back"></li>
+    </ul>
+</section>
+
+<script>
+  
+</script>
+</body>
+</html>

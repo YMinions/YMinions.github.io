@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .Instrument{
+            background: salmon;
+            width: 800px;
+            overflow: hidden;
+            position: relative;
+            margin: auto;
+        }
+
+        .Instrument img{
+            width: 650px;
+            vertical-align: middle;
+            position: absolute;
+            top:0px;
+            left:0px;
+            transition: all 1s;
+        }
+
+        .Instrument img:first-child{
+            position: static;
+        }
+        
+      
+    </style>
+</head>
+<body>
+    <div class="Instrument">
+        <!-- <img src="./img/a1.png" alt="">
+        <img src="./img/a2.png" alt="">
+        <img src="./img/a3.png" alt="">
+        <img src="./img/a4.png" alt="">
+        <img src="./img/a1.png" alt="">
+        <img src="./img/a2.png" alt="">
+        <img src="./img/a3.png" alt="">
+        <img src="./img/a4.png" alt=""> -->
+        <img src="./img copy/1.jpg" alt="">
+        <img src="./img copy/2.jpg" alt="">
+        <img src="./img copy/3.jpg" alt="">
+        <img src="./img copy/5.jpg" alt="">
+        <img src="./img copy/a004.jpg" alt="">
+        
+    </div>
+
+
+    <script>
+        var Instrument = document.querySelector(".Instrument");
+        var imgs =  document.querySelectorAll(".Instrument img")
+        for (var i = 0; i < imgs.length; i++) {
+            imgs[i].style.left = (100  / imgs.length) * i +"%";
+            imgs[i].xxx = i;
+            imgs[i].onmouseover = function () {
+                console.log(this.xxx);    
+                for (var j = 0; j < imgs.length; j++) {
+						if (j <= this.xxx) {
+							// console.log(j);
+							imgs[j].style.left =
+								j * ((Instrument.offsetWidth - imgs[0].offsetWidth) / (imgs.length - 1)) + "px";
+						} else {
+							imgs[j].style.left =
+								(j - 1) * ((Instrument.offsetWidth - imgs[0].offsetWidth) / (imgs.length - 1)) +
+								imgs[0].offsetWidth +
+								"px";
+						}
+					}
+				};
+				imgs[i].onmouseout = function () {
+					for (let j = 0; j < imgs.length; j++) {
+						imgs[j].style.left = (100 / imgs.length) * j + "%";
+					}
+				}
+			}
+        
+
+        
+
+
+      
+    </script>
+</body>
+</html>

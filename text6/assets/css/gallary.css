@@ -1,0 +1,14 @@
+.gallery .container {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.gallery .row div[class^=col] {
+  padding: 5px;
+}
+.gallery .row div[class^=col] img {
+  border-radius: 5px;
+  width: 100%;
+}
+#myModal .modal-body img {
+  width: 100%;
+}

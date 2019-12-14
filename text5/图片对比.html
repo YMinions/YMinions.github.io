@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: lightgoldenrodyellow;
+        }
+
+        .photo {
+            width: 700px;
+            border: 5px solid paleturquoise;
+            margin: 10% auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+ 
+
+        .card img {
+            width: 100%;
+            vertical-align: middle;
+        }
+
+        .right {
+            /* width: 200px; */
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            /* left: -100px; */
+            z-index: 2;
+            transition: all .1s;
+            border-right:5px solid rgba(0, 0, 0, 0.2);
+         }
+
+    </style>
+</head>
+
+<body>
+    <div class="photo">
+        <div class="card"><img src="./image/ancientry.jpg" alt="">
+            <div class="right"></div>
+            <!-- <span class="wire"></span> -->
+            
+        </div>
+    </div>
+
+
+    <script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+    <script>
+        $(".card").mousemove(function (event) {
+            console.log(event);
+
+            var left = $('.photo .card').offset().left;
+            var small = event.pageX - left;
+
+            if (small < 100) {
+                $('.right').width(0);
+            } else {
+                $('.right').width(small);
+            
+            }
+
+        })
+
+    </script>
+</body>
+
+</html>

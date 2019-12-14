@@ -1,0 +1,1115 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+section.header {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section.header .menu {
+  width: 400px;
+  padding: 10px;
+  position: relative;
+}
+section.header .menu button.title {
+  margin-left: 20px;
+  border: none;
+  background: white;
+  font-size: 20px;
+}
+section.header .menu button.title a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #1f386e;
+}
+section.header .menu .number {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #999;
+  float: right;
+}
+section.header .menu .number span {
+  letter-spacing: 1px;
+  font-size: 14px;
+  display: block;
+  color: #1f386e;
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+section.header .nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  padding: 10px;
+}
+section.header .nav .list li {
+  padding-left: 30px;
+  display: inline-block;
+}
+section.header .nav .list li a {
+  font-family: "Montserrat", sans-serif;
+  color: #1f386e;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 2px;
+  line-height: 2em;
+}
+section.header .nav .list li a:hover {
+  color: #ce2a36;
+}
+section.contain {
+  background: url("../image/intro-bg.jpg") center center no-repeat;
+  background-size: cover;
+}
+section.contain .introduce {
+  width: 700px;
+  margin: 0px auto;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+section.contain .introduce h1 {
+  padding-top: 50px;
+  font-size: 62px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  width: 650px;
+}
+section.contain .introduce p {
+  color: #fff;
+  font-size: 17px;
+  line-height: 28px;
+  padding: 10px;
+  width: 550px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.45);
+  margin-bottom: 40px;
+}
+section.contain .introduce a {
+  transform: uppercase;
+  color: #fff;
+  background-color: #e52f3c;
+  padding: 14px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: all 0.8s;
+}
+section.contain .introduce a:hover {
+  background-color: #1f386e;
+}
+section.Estimate {
+  width: 100%;
+  background: #1f386e;
+}
+section.Estimate .touch {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+section.Estimate .touch h3 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+section.Estimate .touch p {
+  font-size: 15px;
+  color: #999;
+}
+section.Estimate .touch .free {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  text-align: center;
+  margin-top: 10px;
+}
+section.Estimate .touch .free a {
+  border: 3px solid #fff;
+  color: #fff;
+  line-height: 3em;
+  text-align: center;
+  font-size: 16px;
+  padding: 15px;
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.8s;
+}
+section.Estimate .touch .free a:hover {
+  background-color: white;
+  color: #1f386e;
+}
+section.question {
+  width: 100%;
+  background: #f6f6f6;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+section.question .box {
+  width: 100%;
+  position: relative;
+}
+section.question .box .photo {
+  width: 550px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  margin-left: 15%;
+}
+section.question .box .photo img {
+  width: 100%;
+  border: 10px solid white;
+}
+section.question .box .answear {
+  width: 600px;
+  position: absolute;
+  top: 20px;
+  right: 20%;
+}
+section.question .box .answear h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #666;
+  border-bottom: 1px solid #999;
+  padding-bottom: 10px;
+  position: relative;
+}
+section.question .box .answear h2::after {
+  content: "";
+  display: block;
+  background: red;
+  width: 50px;
+  height: 3px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+section.question .box .answear p {
+  color: #999;
+  font-size: 16px;
+  line-height: 2em;
+}
+section.question .box .answear h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 0 0 20px 0;
+  color: #333;
+}
+section.question .box .answear::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.question .box .answear .about-lf {
+  float: left;
+  padding: 10px 10px 10px 50px;
+  line-height: 2em;
+  font-size: 14px;
+  color: #666;
+  font-family: "Open Sans", sans-serif;
+}
+section.question .box .answear .about-rg {
+  float: right;
+  line-height: 2em;
+  padding: 10px 50px 10px 10px;
+  font-size: 14px;
+  color: #666;
+  font-family: "Open Sans", sans-serif;
+}
+section.services {
+  width: 100%;
+  padding: 100px 0;
+}
+section.services .title {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+section.services .title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #333;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  padding-bottom: 20px;
+}
+section.services .title h2::after {
+  position: absolute;
+  top: 60px;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #e52f3c;
+}
+section.services .title .card {
+  width: 1200px;
+  position: relative;
+}
+section.services .title .card h3 {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+section.services .title .card p {
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.5em;
+}
+section.services .title .card .card_one {
+  width: 30%;
+  padding: 15px;
+}
+section.services .title .card .card_one img {
+  width: 100%;
+}
+section.services .title .card .card_one h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+section.services .title .card .card_one p {
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.5em;
+}
+section.services .title .card .card_two {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 400px;
+  padding: 15px;
+}
+section.services .title .card .card_two img {
+  width: 100%;
+}
+section.services .title .card .card_two h3 {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+section.services .title .card .card_two p {
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.5em;
+}
+section.services .title .card .card_three {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+}
+section.services .title .card .card_three img {
+  width: 100%;
+}
+section.services .title .cardsecond {
+  margin-top: 20px;
+  width: 1200px;
+  position: relative;
+}
+section.services .title .cardsecond h3 {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+section.services .title .cardsecond p {
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.5em;
+}
+section.services .title .cardsecond .card_four {
+  width: 30%;
+  padding: 15px;
+}
+section.services .title .cardsecond .card_four img {
+  width: 100%;
+}
+section.services .title .cardsecond .card_four h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+section.services .title .cardsecond .card_four p {
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.5em;
+}
+section.services .title .cardsecond .card_five {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 400px;
+  padding: 15px;
+}
+section.services .title .cardsecond .card_five img {
+  width: 100%;
+}
+section.services .title .cardsecond .card_five h3 {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+}
+section.services .title .cardsecond .card_five p {
+  font-size: 15px;
+  color: #999999;
+  line-height: 1.5em;
+}
+section.services .title .cardsecond .card_six {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+}
+section.services .title .cardsecond .card_six img {
+  width: 100%;
+}
+section.works {
+  background: #f6f6f6;
+  position: relative;
+}
+section.works .title {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+section.works .title h2 {
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  font-size: 32px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  line-height: 2em;
+}
+section.works .title h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #e52f3c;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+section.works .cards {
+  width: 1200px;
+  margin: 50px auto;
+  position: relative;
+}
+section.works .cards img {
+  width: 30%;
+}
+section.works .cards a {
+  text-decoration: none;
+}
+section.works .cards #card_one {
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+}
+section.works .cards #card_one .text {
+  position: relative;
+  opacity: 0;
+  transition: all 0.8s;
+}
+section.works .cards #card_one .text h4 {
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  text-transform: uppercase;
+  transition: all 0.8s;
+  z-index: 1;
+}
+section.works .cards #card_one .text::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 240px;
+  background: rgba(31, 56, 110, 0.8);
+  position: absolute;
+}
+section.works .cards #card_one .text:hover {
+  opacity: 1;
+  transition: all 0.8s;
+}
+section.works .cards #card_two {
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+  position: absolute;
+  top: 0px;
+  left: 390px;
+}
+section.works .cards #card_two .text {
+  position: relative;
+  opacity: 0;
+  transition: all 0.8s;
+}
+section.works .cards #card_two .text h4 {
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  text-transform: uppercase;
+  transition: all 0.8s;
+  z-index: 1;
+}
+section.works .cards #card_two .text::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 240px;
+  background: rgba(31, 56, 110, 0.8);
+  position: absolute;
+}
+section.works .cards #card_two .text:hover {
+  opacity: 1;
+  transition: all 0.8s;
+}
+section.works .cards #card_three {
+  width: 100%;
+  position: relative;
+  padding: 0 20px;
+  position: absolute;
+  top: 0px;
+  left: 780px;
+}
+section.works .cards #card_three .text {
+  position: relative;
+  opacity: 0;
+  transition: all 0.8s;
+}
+section.works .cards #card_three .text h4 {
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  text-transform: uppercase;
+  transition: all 0.8s;
+  z-index: 1;
+}
+section.works .cards #card_three .text::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 240px;
+  background: rgba(31, 56, 110, 0.8);
+  position: absolute;
+}
+section.works .cards #card_three .text:hover {
+  opacity: 1;
+  transition: all 0.8s;
+}
+section.works .cards #card_four {
+  width: 100%;
+  position: relative;
+  padding: 20px 20px;
+}
+section.works .cards #card_four .text {
+  position: relative;
+  opacity: 0;
+  transition: all 0.8s;
+}
+section.works .cards #card_four .text h4 {
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  text-transform: uppercase;
+  transition: all 0.8s;
+  z-index: 1;
+}
+section.works .cards #card_four .text::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 240px;
+  background: rgba(31, 56, 110, 0.8);
+  position: absolute;
+}
+section.works .cards #card_four .text:hover {
+  opacity: 1;
+  transition: all 0.8s;
+}
+section.works .cards #card_five {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 245px;
+  left: 390px;
+}
+section.works .cards #card_five .text {
+  position: relative;
+  opacity: 0;
+  transition: all 0.8s;
+}
+section.works .cards #card_five .text h4 {
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  text-transform: uppercase;
+  transition: all 0.8s;
+  z-index: 1;
+}
+section.works .cards #card_five .text::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 240px;
+  background: rgba(31, 56, 110, 0.8);
+  position: absolute;
+}
+section.works .cards #card_five .text:hover {
+  opacity: 1;
+  transition: all 0.8s;
+}
+section.works .cards #card_six {
+  width: 100%;
+  position: relative;
+  padding: 20px;
+  position: absolute;
+  top: 245px;
+  left: 780px;
+}
+section.works .cards #card_six .text {
+  position: relative;
+  opacity: 0;
+  transition: all 0.8s;
+}
+section.works .cards #card_six .text h4 {
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  text-transform: uppercase;
+  transition: all 0.8s;
+  z-index: 1;
+}
+section.works .cards #card_six .text::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 240px;
+  background: rgba(31, 56, 110, 0.8);
+  position: absolute;
+}
+section.works .cards #card_six .text:hover {
+  opacity: 1;
+  transition: all 0.8s;
+}
+section.works .cards #card_seven {
+  width: 100%;
+  position: relative;
+  padding: 20px;
+}
+section.works .cards #card_seven .text {
+  position: relative;
+  opacity: 0;
+  transition: all 0.8s;
+}
+section.works .cards #card_seven .text h4 {
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  text-transform: uppercase;
+  transition: all 0.8s;
+  z-index: 1;
+}
+section.works .cards #card_seven .text::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 240px;
+  background: rgba(31, 56, 110, 0.8);
+  position: absolute;
+}
+section.works .cards #card_seven .text:hover {
+  opacity: 1;
+  transition: all 0.8s;
+}
+section.works .cards #card_eight {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 528px;
+  left: 390px;
+}
+section.works .cards #card_eight .text {
+  position: relative;
+  opacity: 0;
+  transition: all 0.8s;
+}
+section.works .cards #card_eight .text h4 {
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  text-transform: uppercase;
+  transition: all 0.8s;
+  z-index: 1;
+}
+section.works .cards #card_eight .text::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 240px;
+  background: rgba(31, 56, 110, 0.8);
+  position: absolute;
+}
+section.works .cards #card_eight .text:hover {
+  opacity: 1;
+  transition: all 0.8s;
+}
+section.works .cards #card_nine {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  top: 528px;
+  left: 780px;
+}
+section.works .cards #card_nine .text {
+  position: relative;
+  opacity: 0;
+  transition: all 0.8s;
+}
+section.works .cards #card_nine .text h4 {
+  color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  text-transform: uppercase;
+  transition: all 0.8s;
+  z-index: 1;
+}
+section.works .cards #card_nine .text::after {
+  content: "";
+  display: block;
+  width: 30%;
+  height: 240px;
+  background: rgba(31, 56, 110, 0.8);
+  position: absolute;
+}
+section.works .cards #card_nine .text:hover {
+  opacity: 1;
+  transition: all 0.8s;
+}
+section.Testimonials {
+  margin-top: 100px;
+}
+section.Testimonials .title {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+section.Testimonials .title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #333;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+  padding-bottom: 20px;
+}
+section.Testimonials .title h2::after {
+  position: absolute;
+  top: 60px;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #e52f3c;
+}
+section.Testimonials .about {
+  width: 1200px;
+  margin: 40px auto 0 auto;
+  position: relative;
+  padding: 10px;
+}
+section.Testimonials .about .one {
+  width: 30%;
+  position: relative;
+}
+section.Testimonials .about .one .word {
+  position: relative;
+}
+section.Testimonials .about .one .word p {
+  position: absolute;
+  bottom: -50px;
+  left: 70px;
+  margin-top: 40px;
+  padding: 0px 15px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5em;
+}
+section.Testimonials .about .one .word span {
+  position: absolute;
+  bottom: -65px;
+  left: 85px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #555050;
+}
+section.Testimonials .about .two {
+  width: 30%;
+  position: relative;
+  position: absolute;
+  top: 10px;
+  left: 390px;
+}
+section.Testimonials .about .two .word {
+  position: relative;
+}
+section.Testimonials .about .two .word p {
+  position: absolute;
+  bottom: -50px;
+  left: 70px;
+  margin-top: 40px;
+  padding: 0px 15px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5em;
+}
+section.Testimonials .about .two .word span {
+  position: absolute;
+  bottom: -65px;
+  left: 85px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #555050;
+}
+section.Testimonials .about .three {
+  width: 30%;
+  position: relative;
+  position: absolute;
+  top: 10px;
+  left: 790px;
+}
+section.Testimonials .about .three .word {
+  position: relative;
+}
+section.Testimonials .about .three .word p {
+  position: absolute;
+  bottom: -50px;
+  left: 70px;
+  margin-top: 40px;
+  padding: 0px 15px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5em;
+}
+section.Testimonials .about .three .word span {
+  position: absolute;
+  bottom: -65px;
+  left: 85px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #555050;
+}
+section.Testimonials .about .four {
+  width: 30%;
+  position: relative;
+  position: absolute;
+  top: 200px;
+  left: 5px;
+}
+section.Testimonials .about .four .word {
+  position: relative;
+}
+section.Testimonials .about .four .word p {
+  position: absolute;
+  bottom: -50px;
+  left: 70px;
+  margin-top: 40px;
+  padding: 0px 15px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5em;
+}
+section.Testimonials .about .four .word span {
+  position: absolute;
+  bottom: -65px;
+  left: 85px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #555050;
+}
+section.Testimonials .about .five {
+  width: 30%;
+  position: relative;
+  position: absolute;
+  top: 200px;
+  left: 385px;
+}
+section.Testimonials .about .five .word {
+  position: relative;
+}
+section.Testimonials .about .five .word p {
+  position: absolute;
+  bottom: -50px;
+  left: 70px;
+  margin-top: 40px;
+  padding: 0px 15px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5em;
+}
+section.Testimonials .about .five .word span {
+  position: absolute;
+  bottom: -65px;
+  left: 85px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #555050;
+}
+section.Testimonials .about .six {
+  width: 30%;
+  position: relative;
+  position: absolute;
+  top: 200px;
+  left: 785px;
+}
+section.Testimonials .about .six .word {
+  position: relative;
+}
+section.Testimonials .about .six .word p {
+  position: absolute;
+  bottom: -50px;
+  left: 70px;
+  margin-top: 40px;
+  padding: 0px 15px;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.5em;
+}
+section.Testimonials .about .six .word span {
+  position: absolute;
+  bottom: -65px;
+  left: 85px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #555050;
+}
+section.Touch {
+  margin-top: 500px;
+  background: #1f386e;
+  position: relative;
+}
+section.Touch .box {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+section.Touch .box .title {
+  width: 750px;
+  position: relative;
+}
+section.Touch .box .title h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.31);
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+section.Touch .box .title h2::after {
+  position: absolute;
+  top: 61px;
+  left: 0px;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #e52f3c;
+}
+section.Touch .box .title p {
+  font-size: 15px;
+  margin: 10px 0px;
+  color: #999;
+}
+section.Touch .box .title .message {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+section.Touch .box .title .message .form-control {
+  width: 330px;
+  height: 30px;
+  font-size: 18px;
+}
+section.Touch .box .title .message .form-controls {
+  width: 330px;
+  height: 30px;
+  font-size: 18px;
+  margin-left: 30px;
+}
+section.Touch .box .title .message .form-controled {
+  width: 700px;
+  height: 80px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+section.Touch .box .title .word {
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  border: 2px solid #fff;
+  width: 150px;
+  text-align: center;
+  padding: 10px;
+  background: transparent;
+  transition: all 0.8s;
+  margin-left: 10px;
+  margin-bottom: 70px;
+}
+section.Touch .box .title .word:hover {
+  background: white;
+  color: #1f386e;
+  cursor: pointer;
+}
+section.Touch .box .Info {
+  width: 350px;
+  position: absolute;
+  top: 0;
+  left: 840px;
+}
+section.Touch .box .Info h4 {
+  font-family: "Montserrat", sans-serif;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.31);
+  padding: 10px 0;
+  color: #fff;
+  font-weight: 800px;
+}
+section.Touch .box .Info .address {
+  margin-top: 80px;
+  font-size: 15px;
+  line-height: 0.5em;
+  position: relative;
+}
+section.Touch .box .Info .address p {
+  font-size: 15px;
+  color: #fff;
+}
+section.Touch .box .Info .address span {
+  display: block;
+  color: #999999;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+section.Touch .box .Info .address #text {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  color: #999999;
+}
+section.Touch .box .Info .phone p {
+  position: absolute;
+  top: 195px;
+  left: 0px;
+  color: #fff;
+}
+section.Touch .box .Info .phone span {
+  position: absolute;
+  top: 235px;
+  left: 0;
+  color: #999999;
+}
+section.Touch .box .Info .email p {
+  position: absolute;
+  top: 260px;
+  left: 0px;
+  color: #fff;
+}
+section.Touch .box .Info .email span {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  color: #999999;
+}
+section.Touch .box .logo ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid rgba(214, 213, 213, 0.31);
+  overflow: hidden;
+  text-align: center;
+}
+section.Touch .box .logo ul li {
+  margin-top: 50px;
+  margin-left: 5px;
+  margin-bottom: 50px;
+  width: 55px;
+  height: 55px;
+  background: url("../image/img-sprite1.png") no-repeat;
+  /* float: left; */
+  /* display: inline; */
+  /* 行内元素 */
+  display: inline-block;
+  /* 行内块级 保留行业元素不换行特性 又有块级元素可以设尺寸 */
+}
+section.Touch .box .logo ul li::after {
+  content: "";
+  display: block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: transparent;
+}
+section.Touch .box .logo ul li:nth-child(2) {
+  background-position-x: -55px;
+}
+section.Touch .box .logo ul li:nth-child(3) {
+  background-position-x: -110px;
+}
+section.Touch .box .logo ul li:nth-child(4) {
+  background-position-x: -165px;
+}
+section.footer {
+  margin-top: 30px;
+}
+section.footer a {
+  text-decoration: none;
+}
+section.footer p {
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0px;
+  color: #888;
+}
+@media screen and (min-width: 576px) {
+  .header {
+    width: 100%;
+  }
+  .contain {
+    width: 100%;
+  }
+}
