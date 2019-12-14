@@ -2,7 +2,7 @@
 ***
 ##html+css排版
 + [INNOVA](https://yminions.github.io/text1/INNOVA.html)
-+ [种地](https://yminions.github.io/text1/index.html)
++ [种地](https://yminions.github.io/text12/index.html)
 + [mini](https://yminions.github.io/text1/miniso.html)
 
 ##JS
